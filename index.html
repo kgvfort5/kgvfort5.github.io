@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort V e.V. - Kleingärten zwischen Stadtfeld und Rennetal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Benutzerdefinierte Schriftart */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-emerald-700 text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold mb-2 md:mb-0">Fort V e.V.</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#startseite" class="hover:text-blue-200 transition duration-300">Startseite</a></li>
+                    <li><a href="#ueber-uns" class="hover:text-blue-200 transition duration-300">Über uns</a></li>
+                    <li><a href="#termine" class="hover:text-blue-200 transition duration-300">Termine</a></li>
+                    <li><a href="#kontakt" class="hover:text-blue-200 transition duration-300">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="startseite" class="bg-emerald-600 text-white py-20 text-center rounded-b-lg shadow-lg mx-4 mt-4">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold mb-4">Willkommen bei Fort V e.V. in Magdeburg!</h2>
+            <p class="text-xl mb-8">Gemeinsam wachsen</p>
+            <a href="#ueber-uns" class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300 shadow-md">Mehr erfahren</a>
+        </div>
+    </section>
+
+    <section id="ueber-uns" class="container mx-auto py-16 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-center mb-8 text-blue-700">Über uns</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg leading-relaxed mb-4">
+                        Unser Verein wurde im Jahr 1990 in der heutigen Form gegründet, seine Vorgänger blicken jedoch auf eine etwa 100 Jahre lange Geschichte zurück.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Dabei war es immer das Ziel gemeinsam 
+                        die Lebensumstände durch Gemeinschaft, sinnhaftes Schaffen, Raum zur Erholung sowie gesunde und günstige Nahrung zu verbessern. Dabei tragen Vereine auch mit Naturräumen zur Luftqualität
+                        und vielem mehr bei.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="beet-im-fruehjahr.jpg" alt="Bild vom Vereinsleben" class="rounded-lg shadow-lg max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="termine" class="container mx-auto py-16 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold text-center mb-10 text-blue-700">Termine</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Mitgliederversammlung</h3>
+                    <p class="text-gray-700 mb-2"><strong class="font-medium">Datum:</strong> Noch offen</p>
+                    <p class="text-gray-700 mb-4"><strong class="font-medium">Ort:</strong> Vereinslaube</p>
+                    <p class="text-gray-800">Beschluss über den Hauptweg, Entlastung des Vorstands</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Container 1</h3>
+                    <p class="text-gray-700 mb-2"><strong class="font-medium">Datum:</strong> 16. Mai - 19. Mai </p>
+                    <p class="text-gray-700 mb-4"><strong class="font-medium">Ort:</strong> Albert-Vater-Straße (B1)</p>
+                    <p class="text-gray-800">Freie Nutzung für alle Mitglieder</p>
+                </div>
+                <!--div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Sommerfest</h3>
+                    <p class="text-gray-700 mb-2"><strong class="font-medium">Datum:</strong> 20. Juli 2025</p>
+                    <p class="text-gray-700 mb-4"><strong class="font-medium">Ort:</strong> Stadtpark</p>
+                    <p class="text-gray-800">Ein gemütliches Beisammensein mit Musik, Essen und Spielen für alle Mitglieder und Freunde.</p>
+                </div-->
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="container mx-auto py-16 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <h2 class="text-4xl font-bold mb-8 text-blue-700">Kontaktieren Sie uns</h2>
+            <p class="text-lg mb-4">Haben Sie Fragen oder möchten Sie Mitglied werden? Wir freuen uns, von Ihnen zu hören!</p>
+            <div class="flex flex-col items-center space-y-4">
+                <p class="text-xl font-semibold">E-Mail: <a href="mailto:kgv@fort5.de" class="text-blue-600 hover:underline">kgv@fort5.de</a></p>
+                <!--p class="text-xl font-semibold">Telefon: +49 123 456789</p-->
+                <!--p class="text-xl font-semibold">Adresse: Verband der Gartenfreunde Magdeburg e.V., c/o Kleingartenverein Fort V e.V., An d. Steinkuhle 24, 39128 Magdeburg</p-->
+            </div>
+        </div>
+    </section>
+
+    <section id="impressum" class="container mx-auto py-16 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+            <h2 class="text-4xl font-bold mb-8 text-blue-700">Impressum</h2>
+            <p>Kleing&auml;rtnerverein &quot;Fort V&quot; e.V.<br />
+            An der Steinkuhle 24<br />
+            c/o KGV &quot;Fort V&quot; e.V. c/o KGV &quot;Fort V&quot; e.V.<br />
+            39128 Magdeburg</p>
+
+            <p>Vereinsregister: 10484<br />
+            Registergericht: Amtsgericht Stendal</p>
+
+            <p><strong>Vertreten durch:</strong><br />
+            Anna Bogenhagen<br />
+            Kordula Later</p>
+
+            <h2>Kontakt</h2>
+            <p>Telefon: &#91;Telefonnummer&#93;<br />
+            E-Mail: kgv@fort5.de</p>
+
+            <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+            <p>Wir sind nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        </div>
+    </section>
+
+
+    <footer class="bg-blue-800 text-white py-8 mt-8 rounded-t-lg shadow-inner">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Fort V e.V., alle Rechte vorbehalten.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#impressum" class="hover:text-blue-200 transition duration-300">Impressum</a>
+                <a href="#" class="hover:text-blue-200 transition duration-300">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
