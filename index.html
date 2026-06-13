@@ -96,31 +96,34 @@
         <div class="bg-white p-8 rounded-lg shadow-md">
             <h2 class="text-4xl font-bold text-center mb-10 text-blue-700">Termine</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {% for termin in site.data.termine %}
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-600"> Wasseranstellung</h3>
-                    <p class="text-gray-700 mb-2">Datum: 25. April 2026</p>
-                    <p class="text-gray-700 mb-2">Zeit: 10 Uhr</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Mitgliederversammlung</h3>
-                    <p class="text-gray-700 mb-2">Datum: 11. April 2026</p>
-                    <p class="text-gray-700 mb-2">Zeit: 10 Uhr</p>
-                    <p class="text-gray-700 mb-4">Ort: Vereinsgarten (Parzelle 25)</p>
-                    <p class="text-gray-700 mb-4">
-                        <div><a class="text-blue-700" href="./Downloads/Aushang Mitgliederversammlung 2026 - April.pdf">Aushang</a></div>
-                    </p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">Grünschnittcontainer 2026</h3>
-                    <p class="text-gray-800">Grünschnitt von einem Arbeitseinsatz wird immer zuerst entsorgt! - Noch keine Termine</p>
-                    <table style="width:100%">
-                        <tr><th>Anlieferung (07:30)</th><th>Abholung (07:30)</th><th>Standort</th></tr>
-                        <tr><td>04.06.2026</td><td>08.06.2026</td><td>Rennetal</td></tr>
-                        <tr><td>23.07.2026</td><td>27.07.2026</td><td>Parkplatz / B1</td></tr>
-                        <tr><td>03.09.2026</td><td>07.09.2026</td><td>Rennetal</td></tr>
-                        <tr><td>15.10.2026</td><td>19.10.2026</td><td>Parkplatz / B1</td></tr>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-600">{{ termin.titel }}</h3>
+                    {% if termin.datum %}<p class="text-gray-700 mb-2">Datum: {{ termin.datum }}</p>{% endif %}
+                    {% if termin.zeit %}<p class="text-gray-700 mb-2">Zeit: {{ termin.zeit }}</p>{% endif %}
+                    {% if termin.ort %}<p class="text-gray-700 mb-2">Ort: {{ termin.ort }}</p>{% endif %}
+                    {% if termin.beschreibung %}<p class="text-gray-700 mb-4">{{ termin.beschreibung }}</p>{% endif %}
+                    {% if termin.aushang_link %}
+                        <p class="text-gray-700 mb-4">
+                            <div><a class="text-blue-700" href="{{ termin.aushang_link | relative_url }}">Aushang</a></div>
+                        </p>
+                    {% endif %}
+                    
+                    {% if termin.infotext %}<p class="text-gray-800 mb-4">{{ termin.infotext }}</p>{% endif %}
+                    {% if termin.tabelle %}
+                    <table style="width:100%" class="text-sm">
+                        <tr class="bg-gray-200"><th>Anlieferung (07:30)</th><th>Abholung (07:30)</th><th>Standort</th></tr>
+                        {% for zeile in termin.tabelle %}
+                        <tr>
+                            <td>{{ zeile.anlieferung }}</td>
+                            <td>{{ zeile.abholung }}</td>
+                            <td>{{ zeile.standort }}</td>
+                        </tr>
+                        {% endfor %}
                     </table>
+                    {% endif %}
                 </div>
+                {% endfor %}
             </div>
         </div>
     </section>

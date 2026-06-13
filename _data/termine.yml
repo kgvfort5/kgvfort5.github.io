@@ -1,0 +1,30 @@
+# Dies ist die Liste der Termine. 
+# Du kannst hier einfach neue Termine hinzufügen oder bestehende ändern.
+
+- titel: "Wasseranstellung"
+  datum: "25. April 2026"
+  zeit: "10 Uhr"
+  beschreibung: "Bitte an den Parzellen sein."
+
+- titel: "Mitgliederversammlung"
+  datum: "11. April 2026"
+  zeit: "10 Uhr"
+  ort: "Vereinsgarten (Parzelle 25)"
+  aushang_link: "/Downloads/Aushang Mitgliederversammlung 2026 - April.pdf"
+
+# Für Tabellen (wie Grünschnitt) nutzen wir diesen Block
+- titel: "Grünschnittcontainer 2026"
+  infotext: "Grünschnitt von einem Arbeitseinsatz wird immer zuerst entsorgt! - Noch keine Termine"
+  tabelle:
+    - anlieferung: "04.06.2026"
+      abholung: "08.06.2026"
+      standort: "Rennetal"
+    - anlieferung: "23.07.2026"
+      abholung: "27.07.2026"
+      standort: "Parkplatz / B1"
+    - anlieferung: "03.09.2026"
+      abholung: "07.09.2026"
+      standort: "Rennetal"
+    - anlieferung: "15.10.2026"
+      abholung: "19.10.2026"
+      standort: "Parkplatz / B1"
