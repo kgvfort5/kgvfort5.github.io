@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -79,10 +81,13 @@
         <div class="bg-white p-8 rounded-lg shadow-md">
             <h2 class="text-4xl font-bold text-center mb-8 text-blue-700">Downloads</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div><a class="text-blue-700" href="./Downloads/Aushang Mitgliederversammlung 2026 - April.pdf">Einladung Mitgliederversammlung April 2026</a></div>
-                <div><a class="text-blue-700" href="./Downloads/Aushang 13042026.pdf">Aushang 13. April 2026</a></div>
-                <div><a class="text-blue-700" href="./Downloads/Protokoll_Mitgliederversammlung_2026_04_11.pdf">Protokoll der 1. Mitgliederversammlung 2026</a></div>
-                <div><a class="text-blue-700" href="./Downloads/Aushang Container April 2026.pdf">Aushang Container</a></div>
+                {% for file in site.static_files %}
+                    {% if file.path contains '/Downloads/' %}
+                        {% unless file.path contains '/Archiv/' %}
+                            <div><a class="text-blue-700" href="{{ file.path | relative_url }}">{{ file.basename | replace: "_", " " }}</a></div>
+                        {% endunless %}
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
