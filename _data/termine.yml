@@ -1,10 +1,11 @@
 # Dies ist die Liste der Termine. 
 # Du kannst hier einfach neue Termine hinzufügen oder bestehende ändern.
 
-- titel: "Mitgliederversammlung"
+- titel: "Mitgliederversammlung mit Grillen"
   datum: "04. Juli 2026"
   zeit: "15 Uhr"
   ort: "Vereinsgarten (Parzelle 25)"
+  infotext: "Bitte per Mail oder an den Vorsitzenden Bescheid geben, wer kommen möchte (zwecks Planung des Einkaufs)."
   aushang_link: "/Downloads/Aushang Einladung Mitgliederversammlung Juni 2026.pdf"
 
 # Für Tabellen (wie Grünschnitt) nutzen wir diesen Block
