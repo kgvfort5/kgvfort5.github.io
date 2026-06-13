@@ -111,7 +111,7 @@
                     
                     {% if termin.infotext %}<p class="text-gray-800 mb-4">{{ termin.infotext }}</p>{% endif %}
                     {% if termin.tabelle %}
-                    <table style="width:100%" class="text-sm">
+                    <table style="width:100%">
                         <tr class="bg-gray-200"><th>Anlieferung (07:30)</th><th>Abholung (07:30)</th><th>Standort</th></tr>
                         {% for zeile in termin.tabelle %}
                         <tr>
