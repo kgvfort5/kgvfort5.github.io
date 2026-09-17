@@ -1,16 +1,22 @@
 # Dies ist die Liste der Termine. 
 # Du kannst hier einfach neue Termine hinzufügen oder bestehende ändern.
 
-- titel: "Mitgliederversammlung mit Grillen"
-  datum: "04. Juli 2026"
-  zeit: "15 Uhr"
-  ort: "Vereinsgarten (Parzelle 25)"
-  infotext: "Bitte per Mail oder an den Vorsitzenden Bescheid geben, wer kommen möchte (zwecks Planung des Einkaufs)."
-  aushang_link: "/Downloads/Aushang Einladung Mitgliederversammlung Juni 2026.pdf"
+- titel: "Mitgliederversammlung"
+  datum: "Samstag, 19. September 2026"
+  zeit: "12 Uhr"
+  ort: "Gemeinschaftsgarten"
+  aushang_link: "/Downloads/Aushang_Einladung_Mitgliederversammlung_September_2026.pdf"
 
-# Für Tabellen (wie Grünschnitt) nutzen wir diesen Block
+- titel: Arbeitseinsatz
+  datum: "17. Oktober 2026"
+  zeit: "09:30 Uhr"
+  ort: "Gemeinschaftsgarten Parzelle 25"
+  infotext: "3 Arbeitsstunden von 6 Pflichtstunden"
+  aushang_link: "/Downloads/Arbeitseinsatz_Oktober2026.jpg"
+
 - titel: "Grünschnittcontainer 2026"
   infotext: "Grünschnitt von einem Arbeitseinsatz wird immer zuerst entsorgt! - Noch keine Termine"
+# Für Tabellen (wie Grünschnitt) nutzen wir diesen Block
   tabelle:
     - anlieferung: "03.07.2026"
       abholung: "07.07.2026"
@@ -27,3 +33,5 @@
     - anlieferung: "16.10.2026"
       abholung: "19.10.2026"
       standort: "Rennetal"
+
+
