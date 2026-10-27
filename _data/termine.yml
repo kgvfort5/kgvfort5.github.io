@@ -13,13 +13,6 @@
   infotext: "Selbst Ablesen bis spätestens 08.11.2026 mit Bild an 'kgv@fort5.de'"
   aushang_link: "/Downloads/Wasserabschaltung und Ablesung Nov 2026.jpeg"
 
-- titel: Arbeitseinsatz
-  datum: "17. Oktober 2026"
-  zeit: "09:30 Uhr"
-  ort: "Gemeinschaftsgarten Parzelle 25"
-  infotext: "3 Arbeitsstunden von 6 Pflichtstunden"
-  aushang_link: "/Downloads/Arbeitseinsatz_Oktober2026.jpg"
-
 - titel: "Grünschnittcontainer 2026"
   infotext: "Grünschnitt von einem Arbeitseinsatz wird immer zuerst entsorgt! - Noch keine Termine"
 # Für Tabellen (wie Grünschnitt) nutzen wir diesen Block
