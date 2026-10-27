@@ -2,10 +2,16 @@
 # Du kannst hier einfach neue Termine hinzufügen oder bestehende ändern.
 
 - titel: "Mitgliederversammlung"
-  datum: "Samstag, 19. September 2026"
-  zeit: "12 Uhr"
+  datum: "Samstag, 14. November 2026"
+  zeit: "10 Uhr"
   ort: "Gemeinschaftsgarten"
-  aushang_link: "/Downloads/Aushang_Einladung_Mitgliederversammlung_September_2026.pdf"
+  aushang_link: "/Downloads/Einladung_Mitgliederversammlung_KGV_Fort_V_14-11-2026.pdf"
+
+- titel: "Ablesen Wasser und Strom, Abstellen Wasser"
+  datum: "Samstag, 31.10.2026"
+  zeit: "Ab 9 Uhr"
+  infotext: "Selbst Ablesen bis spätestens 08.11.2026 and kgv@fort5.de"
+  aushang_link: "/Downloads/Wasserabschaltung und Ablesung Nov 2026.jpeg"
 
 - titel: Arbeitseinsatz
   datum: "17. Oktober 2026"
@@ -18,15 +24,6 @@
   infotext: "Grünschnitt von einem Arbeitseinsatz wird immer zuerst entsorgt! - Noch keine Termine"
 # Für Tabellen (wie Grünschnitt) nutzen wir diesen Block
   tabelle:
-    - anlieferung: "03.07.2026"
-      abholung: "07.07.2026"
-      standort: "Rennetal"
-    - anlieferung: "23.07.2026"
-      abholung: "27.07.2026"
-      standort: "Parkplatz / B1"
-    - anlieferung: "13.08.2026"
-      abholung: "17.08.2026"
-      standort: "Rennetal"
     - anlieferung: "04.09.2026"
       abholung: "07.09.2026"
       standort: "Parkplatz / B1"
